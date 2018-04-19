@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title="Pug Google Login"
+        style
+            include style.css
+    body
+        div.container
+            div.header
+                h1 Please log to your Google Account
+            form.form(action="/auth/google", method="GET")
+                div.form-group
+                    label.label(for="login") Login
+                        input.inp(type="text",placeholder="Enter Login" name="login")
+                div.form-group
+                    label.label(for="pass") Password
+                        input.inp(type="password",placeholder="Enter Password" name="pass")    
+                button.btn(type='submit') Sign up
+            footer created by Google &copy; :)
+               
